@@ -1,0 +1,203 @@
+* 
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Monaco', sans-serif;
+}
+
+h1
+{
+    color:mediumslateblue;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2, p
+{
+    color:mediumslateblue;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3
+{    
+    color:mediumslateblue;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main
+{
+    min-height: 100vh;
+    background: linear-gradient(to right top, purple, rebeccapurple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass
+{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.5), 
+    rgba(255, 255, 255, 0.3));
+
+    border-radius: 1rem;
+    z-index: 3;
+
+    backdrop-filter: blur(2rem);
+
+    display: flex;
+}
+
+.circle1, .circle2
+{
+    background: white;
+    background: linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.7), 
+    rgba(255, 255, 255, 0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1
+{
+    top: 5%;
+    left: 10%;
+}
+
+.circle2
+{
+    bottom: 5%;
+    right: 10%;
+}
+
+.dashboard
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    /* change the colour */
+    background: linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.5), 
+    rgba(255, 255, 255, 0.3));
+    border-radius: 1rem;
+}
+
+.link
+{
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+
+.link h2
+{
+    padding: 0rem 2rem;
+}
+
+.projects
+{
+    flex: 2;
+}
+
+.status
+{
+    margin-bottom: 3rem;
+}
+
+.projects
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}
+
+.card
+{
+    display: flex;
+    background: linear-gradient(to right top, 
+    rgba(255, 255, 255, 0.3), 
+    rgba(255, 255, 255, 0.7));
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    justify-content: space-between;
+}
+
+.progress1
+{
+    background: linear-gradient(to right top, 
+    purple, 
+    rebeccapurple);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress1::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 236, 236);
+    position: absolute;
+    left: 90%;
+}
+
+.progress2
+{
+    background: linear-gradient(to right top, 
+    purple, 
+    rebeccapurple);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress2::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 236, 236);
+    position: absolute;
+    left: 10%;
+}
+
+.card-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3rem;
+}
+
+.card img
+{
+    border-radius: 1rem;
+}
+
+.percent
+{
+    font-weight: bold;
+}
