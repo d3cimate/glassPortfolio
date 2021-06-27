@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+@font-face
+{
+    font-family: Monaco;
+    src: url(./fonts/Monaco.ttf);
+}
+
 body 
 {
     font-family: 'Monaco', sans-serif;
